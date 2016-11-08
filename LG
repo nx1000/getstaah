@@ -1,0 +1,20 @@
+  terima := Socket.ReceiveText;
+  Memo3.Lines.Add(FormatDateTime('dd-mm-yyyy hh:nn:ss',Now)+' <-- '+terima);
+  InsertRAW(terima);
+
+
+procedure TForm1.InsertRAW(s: String);
+begin
+  //
+
+
+
+  ZConnection1.ExecuteDirect('insert into pbxraw (trdt,smdr) ' +
+                  ' values ('+QuotedStr(FormatDateTime('yyyy-mm-dd hh:nn:ss',Now))+
+                  ','+QuotedStr(s)+
+                  ')');
+
+
+
+
+end;

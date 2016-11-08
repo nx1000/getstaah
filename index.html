@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <!--<script src="app.js"></script>-->
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!--<script>
+        var socket = io.connect('http://localhost:9090');
+        socket.on('news', function(data) {
+            console.log(data);
+            socket.emit('my other event', {
+                my: 'data'
+            });
+        });
+    </script>-->
+
+    <script src="app.js"></script>
+    <script src="socket.js"></script>
+    <style type="text/css">
+        .mine {
+            height: 600px;
+            border: 1px solid black;
+            overflow: scroll;
+            padding: 5px;
+            font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+        }
+    </style>
+
+</head>
+
+<body ng-app="StaahApp" ng-controller="StaahCtrl">
+
+    <!--<p>{{jsonstring}}</p>-->
+    <h2>Incoming message from STAAH</h2>
+    <div class="mine">
+        <div ng-repeat="pesan in pesans">
+
+            <p>{{pesan.tgl | date : 'yyyy-MM-dd hh:mm:ss'}} {{pesan.isi}}
+                <p>
+        </div>
+    </div>
+    <h3>Unprocessed booking(s): {{waiting}}</h3>
+
+</body>
+
+</html>
