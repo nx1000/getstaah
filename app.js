@@ -10,6 +10,8 @@ angular.module('StaahApp', ['btford.socket-io'])
 
     $scope.jsonstring = 'belum ada data';
     $scope.waiting = '0';
+    $scope.errordb = '';
+    $scope.errorhttp = '';
 
     $scope.pesans = [];
 
@@ -27,6 +29,14 @@ angular.module('StaahApp', ['btford.socket-io'])
         // $scope.jsonstring = data;        
         $scope.waiting = data;
 
+    });
+
+    mySocket.on("adaerrordb", function(data) {
+        $scope.errordb = data;
+    });
+
+    mySocket.on("adaerrorhttp", function(data) {
+        $scope.errorhttp = data;
     });
 
 

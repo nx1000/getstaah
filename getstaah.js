@@ -44,6 +44,12 @@ function getstaah() {
         json: true, // <--Very important!!!
         body: myJSONObject
     }, function(error, response, body) {
+
+        if (error) {
+            console.log(error.code);
+            io.emit("adaerrorhttp", error.code);
+        }
+
         console.log(body);
         io.emit("incoming", body);
         var jsonbody = JSON.stringify(body);
@@ -71,7 +77,8 @@ function insertData(apa) {
 
     connection.query(cmd, function(err, result, fields) { // dan meng-eksekusi
         if (err) {
-            console.log('ada error');
+            console.log('insertData: ' + err.code);
+            io.emit("adaerrordb", err.code);
             return err;
         }
         connection.end();
@@ -93,7 +100,8 @@ function unprocessed() {
 
     connection.query(cmd, function(err, result, fields) { // dan meng-eksekusi
         if (err) {
-            console.log('ada error');
+            console.log('unprocessed: ' + err);
+            io.emit("adaerrordb", err.code);
             return err;
         }
         io.emit("gagal", result[0].cnt);
