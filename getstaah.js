@@ -57,7 +57,7 @@ function getstaah() {
 
         // tulis ke file
         var tgl = moment().format('YYYY-MM-DD HH:mm:ss');
-        fs.appendFile("/home/toni/staahlog.txt", tgl + ' : ' + jsonbody + '\n', 'utf8', function(err) {
+        fs.appendFile("./staahlog.txt", tgl + ' : ' + jsonbody + '\n', 'utf8', function(err) {
             if (err) {
                 return console.log(err);
             } else {
