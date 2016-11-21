@@ -5,6 +5,7 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var config = require('./config');
+var fs = require('fs');
 
 
 var kirimkan = "";
@@ -53,6 +54,19 @@ function getstaah() {
         console.log(body);
         io.emit("incoming", body);
         var jsonbody = JSON.stringify(body);
+
+        // tulis ke file
+        var tgl = moment().format('YYYY-MM-DD HH:mm:ss');
+        fs.appendFile("/home/toni/staahlog.txt", tgl + ' : ' + jsonbody + '\n', 'utf8', function(err) {
+            if (err) {
+                return console.log(err);
+            } else {
+                console.log("The file was saved!");
+            }
+
+
+        });
+
         insertData(jsonbody);
         unprocessed();
     });
@@ -110,6 +124,7 @@ function unprocessed() {
     });
 }
 
+getstaah();
 main();
 http.listen(config.web.port, function() {
     console.log('server is running on port ' + config.web.port);
