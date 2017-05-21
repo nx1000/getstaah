@@ -1,0 +1,157 @@
+2016-11-25T06:44:42.553Z
+server is running on port 9090
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:44:52.569Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:45:02.572Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:45:12.584Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:45:22.587Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:45:32.597Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:45:42.599Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:45:52.607Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:46:02.618Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:46:12.619Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:46:22.624Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:46:32.632Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:46:42.640Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:46:52.650Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:47:02.662Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:47:12.673Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:47:22.684Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:47:32.693Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:47:42.704Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:47:52.706Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:48:02.717Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:48:12.728Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:48:22.739Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:48:32.747Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:48:42.756Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
+2016-11-25T06:48:52.758Z
+ENOTFOUND
+undefined
+insertData: ECONNREFUSED
+unprocessed: Error: connect ECONNREFUSED 127.0.0.1:3306
+The file was saved!
