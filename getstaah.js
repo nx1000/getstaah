@@ -125,7 +125,8 @@ function unprocessed() {
 }
 
 getstaah();
-main();
-http.listen(config.web.port, function() {
-    console.log('server is running on port ' + config.web.port);
-});
+
+// main();
+// http.listen(config.web.port, function() {
+//     console.log('server is running on port ' + config.web.port);
+// });
