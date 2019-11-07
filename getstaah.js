@@ -89,6 +89,8 @@ function insertData(apa) {
     var cmd = 'insert into staah_bookings (trdt,jsonstr) ' +
         ' values (' + mysql.escape(trdt) + ',' + mysql.escape(apa) + ')';
 
+    console.log(cmd)
+
     connection.query(cmd, function(err, result, fields) { // dan meng-eksekusi
         if (err) {
             console.log('insertData: ' + err.code);
