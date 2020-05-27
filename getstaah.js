@@ -12,11 +12,11 @@ var kirimkan = "";
 
 app.use("/", express.static(__dirname));
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-io.on("connection", function() {
+io.on("connection", function () {
     console.log('ada koneksi');
 });
 
@@ -44,7 +44,7 @@ function getstaah() {
         method: "POST",
         json: true, // <--Very important!!!
         body: myJSONObject
-    }, function(error, response, body) {
+    }, function (error, response, body) {
 
         if (error) {
             console.log(error.code);
@@ -57,7 +57,7 @@ function getstaah() {
 
         // tulis ke file
         var tgl = moment().format('YYYY-MM-DD HH:mm:ss');
-        fs.appendFile("./staahlog.txt", tgl + ' : ' + jsonbody + '\n', 'utf8', function(err) {
+        fs.appendFile("./staahlog.txt", tgl + ' : ' + jsonbody + '\n', 'utf8', function (err) {
             if (err) {
                 return console.log(err);
             } else {
@@ -68,7 +68,8 @@ function getstaah() {
         });
 
         insertData(jsonbody);
-        unprocessed();
+        //unprocessed();
+        lastrun();
     });
 }
 
@@ -91,7 +92,7 @@ function insertData(apa) {
 
     console.log(cmd)
 
-    connection.query(cmd, function(err, result, fields) { // dan meng-eksekusi
+    connection.query(cmd, function (err, result, fields) { // dan meng-eksekusi
         if (err) {
             console.log('insertData: ' + err.code);
             io.emit("adaerrordb", err.code);
@@ -101,6 +102,7 @@ function insertData(apa) {
     });
 
 }
+
 
 function unprocessed() {
     var mysql = require('mysql');
@@ -114,7 +116,7 @@ function unprocessed() {
     var cmd = "select count(*) as cnt from staah_bookings " +
         " where processed=0 and jsonstr like '%reservations%'";
 
-    connection.query(cmd, function(err, result, fields) { // dan meng-eksekusi
+    connection.query(cmd, function (err, result, fields) { // dan meng-eksekusi
         if (err) {
             console.log('unprocessed: ' + err);
             io.emit("adaerrordb", err.code);
@@ -122,6 +124,22 @@ function unprocessed() {
         }
         io.emit("gagal", result[0].cnt);
         console.log(result[0].cnt);
+        connection.end();
+    });
+}
+
+function lastrun() {
+    var mysql = require('mysql');
+    var connection = mysql.createConnection({
+        host: config.hotel.hostname,
+        user: config.hotel.user,
+        password: config.hotel.pass,
+        database: config.hotel.database
+    });
+
+    var tgl = moment().format('YYYY-MM-DD HH:mm:ss');
+    var cmd = "update hkrunning set running=0,lastrun=" + mysql.escape(tgl) + " where prog='getstaah'";
+    connection.query(cmd, function (err, result, fields) {
         connection.end();
     });
 }

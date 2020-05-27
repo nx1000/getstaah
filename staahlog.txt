@@ -1,9 +1,0 @@
-2019-11-06 22:16:36 : undefined
-2019-11-06 22:18:10 : undefined
-2019-11-06 22:22:50 : "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL was not found on this server.</p>\n</body></html>\n"
-2019-11-06 22:24:52 : {"reservations":{"reservation":[{"hotel_id":"13815","deposit":"0.00","totalprice":"533500","room":[{"arrival_date":"2019-11-08","numberofadult":"1","totalprice":533500,"numberofchild":"0","name":"Apatel Salemba Residence Lantai 25 Unit","price":[{"date":"2019-11-08","amount":"533500","rate_id":"7316"}],"remarks":"","numberofguests":"1","currencycode":"IDR","guest_name":"Suandra Eka Saputra","id":"9630","departure_date":"2019-11-09"}],"booking_id":"1503363682","channel_ref":"HMAPSWEMXK","currencycode":"IDR","company":"AIRBNBCONTENT","customer":{"countrycode":"","email":"suandraeka-1qnhn9yrzn8sh91h@guest.airbnb.com","address":"","remarks":"","last_name":"Saputra","city":"","first_name":"Suandra Eka","telephone":"628117556128,6281220","zip":""},"hotel_name":"Apatel","booking_date":"2019-11-06","booking_status":"new","commissionamount":"0.00"}]}}
-2019-11-06 22:25:20 : {"bookingresponse":{"status":"Fail","error":"No new bookings"}}
-2019-11-06 22:25:27 : {"bookingresponse":{"error":"No new bookings","status":"Fail"}}
-2019-11-06 22:35:56 : {"bookingresponse":{"status":"Fail","error":"No new bookings"}}
-2019-11-06 22:36:06 : {"bookingresponse":{"status":"Fail","error":"No new bookings"}}
-2019-11-06 22:36:45 : {"bookingresponse":{"status":"Fail","error":"No new bookings"}}
